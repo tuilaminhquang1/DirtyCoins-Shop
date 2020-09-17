@@ -1,0 +1,263 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+ul.menu > li {
+    font-style: italic;
+    font-weight: bold;    
+    padding: 10px;
+    text-align: center;
+    min-width: 200px;
+    width: 20%;
+}
+ul.menu > li > img{
+    margin-top:-10px;
+}
+ul.menu > li :hover {
+    font-weight: 5px;
+    transition: all 1s ease-in-out;
+}
+
+ul.menu > li > a {
+    text-decoration:none;
+    padding: 15px 20px;
+    color:black;
+    display: block;
+}
+ul.menu li>a:hover {
+    color:white;
+    background-color:black;
+}
+.sub-menu{
+    list-style-type: none;
+    display:none;
+}
+ul.sub-menu a{
+    display:block;
+    text-decoration:none;
+    color:black;
+    text-transform: uppercase;
+    padding: 15px 15px;
+}
+.menu>li:hover ul.sub-menu{
+    display: block;
+}
+.menu>li:hover ul.sub-menu>li{
+    background-color:lightblue;
+    margin:10px;
+}
+div.slide>img{
+    height: 800px;
+    width: 100%;
+    
+}  
+section>h2{
+    text-align: center;
+    animation: doimau infinite 0.75s; 
+   
+}  
+@keyframes doimau{
+    from{
+        color:black;
+    }
+    to{
+        color:red;
+    }
+}  /*-CSS Section-*/
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+}
+div.slide > img{
+    width: 100%;
+}
+div.product{
+    text-align: center;
+    width: 33%;
+}
+div.product>img{
+    width: 100%;
+}
+.product a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;   
+}
+.product h3>a:hover{
+    border-bottom: 1px  solid black;
+    transition: all .1s ease-in-out;
+}
+.product>span{
+    text-align: center;
+}
+/*-CSS FOOTER-*/
+.end{
+    display: flex;
+}
+div.contact>h3{
+    background-color:#f3f3f3;
+    color:black;
+    text-align: left;
+    padding:20px 0;
+}
+div.introduce>h2{
+    text-align: center;
+}
+footer div>p{
+    text-align: center;
+}
+div.col50>ul>li{
+    list-style-type: none;
+    padding: 2px 2px;
+    
+}
+div.col30>ul>li{
+    list-style-type:none ;
+    margin: 5px;
+}
+div.col30>ul>li>a{
+    display: block;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #434343;
+
+}
+.col30>h2{
+    padding-left: 245px;
+}
+.col30>ul{
+    display: flex;
+    padding-left: 242px;
+}
+/*-CSS product-*/
+
+div.content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+div.content{
+    display: flex;
+}
+.thumb{
+    display: flex;
+}
+.thumb > div {
+    width: 20%;
+    margin: 2px;
+}
+.thumb >div>img{
+    border:1px solid black;
+}
+.left img {
+    width: 100%;
+}
+.content > div {
+    width: 50%;
+}
+img {
+    cursor: pointer;
+}
+.right{
+    text-align: center;
+}
+.right>a>button{
+    width: 222px;
+    height: 45px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.right>p{
+    margin-top:3px;
+}
+div.product-detail-content ul{
+    text-align: left;
+    font-size: 12px;
+    width: 34%;
+    margin-left: 33%;
+}
+
+
+/*-CSS Section of About Page-*/
+.about{
+    text-align: center;
+}
+.about img{
+    width: 100%;
+    max-width: 800px;
+}
+.text-about p{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    width: 100%;
+}
+/*-CSS Section of checkout-*/
+div.checkout{
+    text-align: center;
+    width: 50%; 
+}
+div.checkout h1{
+    text-align: center;
+    margin-right: 25%;
+}
+div.checkout input{
+        margin:10px;
+        width: 50%;
+        height: 44px;
+}
+div.checkout label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+div.checkout select{
+    font-size: 18px;
+}
+div.checkout button{
+    height: 50px;
+    width: 25%;
+    margin-top: 5px;
+    border-radius: 5px;     
+    background-color: #357ebd;
+    border-color: #2f71a9;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*-Section of Contact-*/
+.contact-page span{
+    padding-top: 10px;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width:950px){
+        div.product{
+            width:50%;
+        }
+}
+@media screen and (max-width:500px){
+    div.product{
+        width:100%;
+    }
+    ul.menu>li{
+        width: 100%;
+    }
+}
+
+
